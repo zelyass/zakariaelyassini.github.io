@@ -7,7 +7,7 @@ body {
 }
 
 #header {
-    background-color: #F5F5DC; /* Beige */
+    background-color: #E2CEB1; /* Dun Cream */
     width: 100%;
     padding: 50px 0;
     text-align: center;
@@ -29,9 +29,9 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    position: absolute;
-    left: 20px;
-    top: 50px;
+    position: relative;
+    left: 0;
+    top: 0;
 }
 
 .container {
@@ -54,7 +54,7 @@ h2 + hr, h3 + hr {
 }
 
 .sub-title {
-    font-size: 1.25rem; /* One size larger than body text */
+    font-size: 1rem; /* Same size as the body text */
     font-weight: bold;
     color: #6F4F37;
     margin: 10px 0 5px 0;
@@ -92,6 +92,11 @@ footer {
     color: white;
     padding: 20px 0;
 }
+
+footer p {
+    font-size: 1rem;
+}
+
 
 footer p {
     font-size: 1rem;
