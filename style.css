@@ -1,132 +1,130 @@
-/* Global Styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
+/* Body Styling */
 body {
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     color: #333;
+    background-color: #f4f4f9;
 }
 
 /* Navigation Bar */
 #navbar {
-    background-color: #333;
+    background: #333;
+    color: #fff;
     padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #navbar ul {
-    list-style-type: none;
-    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 #navbar ul li {
-    display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 #navbar ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 #navbar ul li a:hover {
-    color: #c2c2c2;
+    color: #f4f4f9;
+    text-decoration: underline;
 }
 
 /* Header Section */
 #header {
-    background-color: #1a1a1a;
+    background: #2e3a59;
     color: #fff;
-    padding: 50px 0;
+    padding: 30px 20px;
     text-align: center;
-}
-
-#header .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .profile-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.profile-img-wrapper {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
 }
 
 .profile-info h1 {
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 2.2em;
+    margin-bottom: 10px;
 }
 
 .profile-info p {
-    font-size: 18px;
-    color: #ccc;
-}
-
-.cv-container {
-    margin-top: 20px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .cv-link {
     display: inline-block;
-    margin-right: 10px;
-}
-
-.cv-img {
-    width: 24px;
-    height: 24px;
-}
-
-.cv-container p {
+    background: #1abc9c;
     color: #fff;
-    font-size: 16px;
+    padding: 10px 15px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
 }
 
-/* Main Content Section */
-section {
-    padding: 50px 0;
+.cv-link:hover {
+    background: #16a085;
 }
 
+/* Section Styling */
 .container {
-    width: 80%;
+    max-width: 960px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-/* About Section */
-#about {
-    background-color: #eaeaea;
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #2c3e50;
 }
 
-#about h2 {
-    font-size: 28px;
+hr {
+    width: 80px;
+    margin: 10px auto 20px;
+    border: 2px solid #1abc9c;
+}
+
+p {
     margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Education Section */
-#education h2,
-#certificates h2,
-#projects h2,
-#awards h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 1em;
 }
 
 .entry {
@@ -134,43 +132,17 @@ section {
 }
 
 .sub-title {
-    font-size: 24px;
+    font-size: 1.2em;
+    color: #34495e;
     font-weight: bold;
-    color: #333;
+    margin-bottom: 5px;
 }
 
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    font-size: 18px;
-    color: #555;
-}
-
-/* Certificates & Projects Sections */
-#certificates .entry,
-#projects .entry {
-    margin-bottom: 20px;
-}
-
-#projects .entry a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-#projects .entry a:hover {
-    text-decoration: underline;
-}
-
-/* Footer Section */
+/* Footer Section (Optional) */
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    font-size: 16px;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
 }
