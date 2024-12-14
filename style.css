@@ -6,11 +6,57 @@ body {
     color: #000;
 }
 
+#navbar {
+    background-color: #6F4F37; /* Light brown */
+    text-align: center;
+    padding: 10px 0;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#navbar a:hover {
+    color: #E2CEB1; /* Dun Cream */
+}
+
 #header {
     background-color: #E2CEB1; /* Dun Cream */
     width: 100%;
     padding: 50px 0;
     text-align: center;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-info {
+    text-align: left;
 }
 
 #header h1 {
@@ -22,16 +68,6 @@ body {
 #header p {
     font-size: 1.25rem;
     color: #6F4F37;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: relative;
-    left: 0;
-    top: 0;
 }
 
 .container {
@@ -56,47 +92,25 @@ h2 + hr, h3 + hr {
 .sub-title {
     font-size: 1rem; /* Same size as the body text */
     font-weight: bold;
-    color: #6F4F37;
-    margin: 10px 0 5px 0;
+    color: black; /* Black color for project titles */
+    margin: 10px 0;
 }
 
-.date {
-    text-align: right;
-    font-size: 1rem;
-    color: #000;
-    padding-right: 10px;
+.entry {
+    margin-bottom: 20px;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 15px 0;
-}
-
-a {
-    text-decoration: none;
-    color: #6F4F37;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #000;
+    list-style-type: square;
+    margin-left: 20px;
 }
 
 footer {
-    text-align: center;
-    background-color: #6F4F37;
+    background-color: #6F4F37; /* Light brown */
     color: white;
-    padding: 20px 0;
+    text-align: center;
+    padding: 15px 0;
 }
-
-footer p {
-    font-size: 1rem;
-}
-
 
 footer p {
     font-size: 1rem;
