@@ -77,50 +77,44 @@ body {
 }
 
 .profile-info h1 {
-    font-size: 2.2em;
-    margin-bottom: 10px;
+    font-size: 2em;
+    color: #fff;
 }
 
 .profile-info p {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    color: #f4f4f9;
     margin-bottom: 20px;
 }
 
 .cv-link {
-    display: inline-block;
-    background: #00b894; /* Bright, modern green */
-    color: #fff;
-    padding: 10px 15px;
-    font-size: 1em;
-    font-weight: bold;
-    border-radius: 5px;
     text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    border: 2px solid #0066cc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #fff;
     transition: background 0.3s;
 }
 
 .cv-link:hover {
-    background: #00a886; /* Darker green for hover effect */
+    background: #0066cc;
+    color: #fff;
 }
 
-/* Section Styling */
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+/* Section Styles */
 h2 {
-    text-align: center;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 2.2em;
+    color: #0066cc;
+    margin-bottom: 20px;
 }
 
 .section-line {
     width: 100%;
     height: 2px;
-    background-color: #00b894; /* Green line */
-    margin: 15px 0;
+    background-color: #00b894; /* Vibrant green line */
+    margin-bottom: 25px;
 }
 
 .entry {
@@ -128,9 +122,9 @@ h2 {
 }
 
 .sub-title {
-    font-size: 1.4em;
+    font-size: 1.3em; /* Slightly smaller project names */
     font-weight: bold;
-    color: #0077b6; /* Subtle but bright blue */
+    color: #0077b6;
     margin-bottom: 5px;
 }
 
@@ -165,6 +159,11 @@ footer p {
     #navbar ul {
         flex-direction: column;
     }
+
+    #navbar ul li {
+        margin: 5px 0;
+    }
+}
 
     #navbar ul li {
         margin: 5px 0;
