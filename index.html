@@ -4,122 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zakaria El Yassini - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            color: #000;
-        }
-
-        #header {
-            background-color: #F5F5DC; /* Beige */
-            width: 100%;
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        #header h1 {
-            font-family: 'Quicksand', sans-serif;
-            font-size: 3rem;
-            color: #6F4F37; /* Light brown */
-        }
-
-        h2, h3 {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #6F4F37;
-            margin-bottom: 5px;
-        }
-
-        h2 + hr, h3 + hr {
-            border: 0;
-            height: 2px;
-            background-color: #6F4F37;
-            margin-top: 0;
-        }
-
-        .sub-title {
-            font-size: 1.25rem; /* One size larger than body text */
-            font-weight: bold;
-            color: #6F4F37;
-            margin: 10px 0 5px 0;
-        }
-
-        .date {
-            text-align: right;
-            font-size: 1rem;
-            color: #000;
-            padding-right: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 15px 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #6F4F37;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #000;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="header">
-        <h1>Zakaria El Yassini</h1>
-        <p>Mathematical and Computational Finance Student</p>
-    </div>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <img src="your-image.jpg" alt="Zakaria El Yassini" class="profile-img">
+            <h1>Zakaria El Yassini</h1>
+            <p>Mathematical and Computational Finance | Quantitative Research Enthusiast</p>
+        </div>
+    </header>
 
-    <div>
-        <h2>Education</h2>
-        <hr>
-        <p><span class="sub-title">MA MSc Mathematical Finance and Statistics</span> - Concordia University (Jan 2025 – May 2027)</p>
-        <p><span class="sub-title">Bachelor of Science BSc</span> - Concordia University (Sep 2020 – Dec 2024)<br>
-        Dean’s List: 2020-2021 academic year<br>
-        CGPA: 3.54/4.30</p>
-        <p><span class="sub-title">Moroccan Baccalaureate in Science</span> - Madariss Maria High School (Sep 2020)</p>
+    <!-- Main Content Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <hr>
+            <p>I am a Master's student in Mathematical and Computational Finance, specializing in quantitative methods and financial analysis. I have a strong passion for applying machine learning to optimize financial decision-making and enhancing trading strategies.</p>
+        </div>
+    </section>
 
-        <h3>Awards & Honors</h3>
-        <hr>
-        <ul>
-            <li>Tom Labelle Bursary in Mathematics</li>
-            <li>Bronze Honour in IYMC</li>
-            <li>Bronze Honour in IAAC</li>
-        </ul>
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <hr>
+            <div class="entry">
+                <h3 class="sub-title">MA MSc Mathematical Finance and Statistics</h3>
+                <p>Jan 2025 – May 2027 | Concordia University, Montreal, QC</p>
+                <ul>
+                    <li>Relevant Coursework: Neural Network, Machine Learning</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <h3 class="sub-title">Bachelor of Science BSc</h3>
+                <p>Sep 2020–Dec 2024 | Concordia University, Montreal, QC</p>
+                <ul>
+                    <li>Dean’s List: 2020-2021 Academic Year</li>
+                    <li>Relevant Coursework: Time Series Analysis, Derivative Pricing, Black-Scholes, Stochastic Calculus, Advanced Statistics & Probability, Asset Management, Hedging, Monte-Carlo Simulations, Continuous Time Finance.</li>
+                    <li>CGPA: 3.54/4.30</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <h3 class="sub-title">Moroccan Baccalaureate in Science</h3>
+                <p>Sep 2020 | Madariss Maria High School, Temara, Morocco</p>
+                <ul>
+                    <li>Distinction: Very Good</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-        <h3>Certificates</h3>
-        <hr>
-        <ul>
-            <li><span class="sub-title">Machine Learning for Trading</span> - New York Institute of Finance (Oct 2024)<br>
-            Completed the "Machine Learning for Trading" course, specializing in neural networks for trading strategies.</li>
-            <li><span class="sub-title">Investment Analysis and Assets Management with Python</span> (Aug 2024)<br>
-            Conducted comprehensive investment analysis using Python, focusing on portfolio optimization.</li>
-        </ul>
+    <section id="awards">
+        <div class="container">
+            <h2>Awards & Honors</h2>
+            <hr>
+            <ul>
+                <li>Tom Labelle Bursary in Mathematics</li>
+                <li>Bronze Honour in IYMC (International Youth Math Challenge)</li>
+                <li>Bronze Honour in IAAC (International Astronomy and Astrophysics Competition)</li>
+            </ul>
+        </div>
+    </section>
 
-        <h3>Projects</h3>
-        <hr>
-        <ul>
-            <li><a href="https://github.com/zelyass/Opt.-Stock-Portfolio" target="_blank">Stock Portfolio Optimization</a></li>
-            <li><a href="https://github.com/zelyass/QuantF/tree/main/BDT%20Calibration" target="_blank">BDT Calibration</a></li>
-            <li><a href="https://github.com/zelyass/QuantF/tree/main/Implied%20Volatility%20calibration" target="_blank">Implied Volatility Tree Calibration</a></li>
-            <li><a href="https://github.com/zelyass/QuantF/tree/main/Monte%20Carlo/Brownian%20Motion%20Intro" target="_blank">Introduction to Brownian Motion and Simulation</a></li>
-            <li><a href="https://github.com/zelyass/QuantF/tree/main/Monte%20Carlo/Geometric%20Brownian%20Motion" target="_blank">Geometric Brownian Motion</a></li>
-            <li><a href="https://github.com/zelyass/QuantF/tree/main/Monte%20Carlo/Var%20Reduction%20in%20Option%20Pricing" target="_blank">Variance Reduction Techniques in Option Pricing</a></li>
-            <li><a href="https://github.com/zelyass/QuantF/tree/main/PDE%20Methods" target="_blank">PDE Methods in Finance - FTCS Scheme</a></li>
-        </ul>
-    </div>
+    <section id="certificates">
+        <div class="container">
+            <h2>Certificates</h2>
+            <hr>
+            <div class="entry">
+                <h3 class="sub-title">Investment Analysis and Assets Management with Python</h3>
+                <p>Aug 2024</p>
+                <ul>
+                    <li>Conducted comprehensive investment analysis and asset management using Python, focusing on data-driven decision-making and portfolio optimization techniques.</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <h3 class="sub-title">Machine Learning for Trading</h3>
+                <p>Oct 2024 | New York Institute of Finance</p>
+                <ul>
+                    <li>Completed the "Machine Learning for Trading" course, specializing in neural networks to enhance trading strategies and optimize financial decision-making.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <hr>
+            <div class="entry">
+                <h3 class="sub-title">Stock Portfolio Optimization</h3>
+                <p><a href="https://github.com/zelyass/Opt.-Stock-Portfolio">GitHub</a></p>
+            </div>
+            <div class="entry">
+                <h3 class="sub-title">BDT Calibration</h3>
+                <p><a href="https://github.com/zelyass/QuantF/tree/main/BDT%20Calibration">GitHub</a></p>
+            </div>
+            <div class="entry">
+                <h3 class="sub-title">Implied Volatility Tree Calibration</h3>
+                <p><a href="https://github.com/zelyass/QuantF/tree/main/Implied%20Volatility%20calibration">GitHub</a></p>
+            </div>
+            <div class="entry">
+                <h3 class="sub-title">Introduction to Brownian Motion and Simulation</h3>
+                <p><a href="https://github.com/zelyass/QuantF/tree/main/Monte%20Carlo/Brownian%20Motion%20Intro">GitHub</a></p>
+            </div>
+            <div class="entry">
+                <h3 class="sub-title">Geometric Brownian Motion</h3>
+                <p><a href="https://github.com/zelyass/QuantF/tree/main/Monte%20Carlo/Geometric%20Brownian%20Motion">GitHub</a></p>
+            </div>
+            <div class="entry">
+                <h3 class="sub-title">Variance Reduction Techniques in Option Pricing</h3>
+                <p><a href="https://github.com/zelyass/QuantF/tree/main/Monte%20Carlo/Var%20Reduction%20in%20Option%20Pricing">GitHub</a></p>
+            </div>
+            <div class="entry">
+                <h3 class="sub-title">PDE Methods in Finance - FTCS Scheme</h3>
+                <p><a href="https://github.com/zelyass/QuantF/tree/main/PDE%20Methods">GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Zakaria El Yassini</p>
+        </div>
+    </footer>
 
 </body>
 </html>
